@@ -5,7 +5,7 @@ var express = require("express");
 var router = express.Router();
 
 // Import du Contrôleur Band
-var band_controller = require("../controllers/bandController");
+var band_controller = require("../controllers/band");
 
 // (Étape 2) Ajout de la route qui permet d'ajouter un groupe
 router.post("/", band_controller.create);

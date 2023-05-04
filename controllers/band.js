@@ -1,4 +1,4 @@
-// Import du modèle student
+// Import du modèle band
 var Band = require("../models/band");
 
 // Import de express-validator
@@ -93,7 +93,7 @@ const checkValidity = (req, res, next) => {
 // Create
 exports.create = [
   bodyIdValidationRule(),
-  studentValidationRules(),
+  bandValidationRules(),
   checkValidity,
   (req, res, next) => {
     // Création de la nouvelle instance de band à ajouter
