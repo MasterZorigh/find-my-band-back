@@ -42,7 +42,7 @@ const bandValidationRules = () => {
       .trim()
       .isLength({ min: 1 })
       .escape()
-      .withMessage("Band top song must be specified.")
+      .withMessage("Band top song must be specified."),
   ];
 };
 
