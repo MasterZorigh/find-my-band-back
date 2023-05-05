@@ -11,17 +11,13 @@ const bandValidationRules = () => {
       .trim()
       .isLength({ min: 1 })
       .escape()
-      .withMessage("Band name must be specified.")
-      .isAlphanumeric()
-      .withMessage("Band name has non-alphanumeric characters."),
+      .withMessage("Band name must be specified."),
 
     body("bandCountry")
       .trim()
       .isLength({ min: 1 })
       .escape()
-      .withMessage("Band Country must be specified.")
-      .isAlphanumeric()
-      .withMessage("Band Country has non-alphanumeric characters."),
+      .withMessage("Band Country must be specified."),
 
     body("bandGenre")
       .trim()
@@ -47,8 +43,6 @@ const bandValidationRules = () => {
       .isLength({ min: 1 })
       .escape()
       .withMessage("Band top song must be specified.")
-      .isAlphanumeric()
-      .withMessage("Band top song has non-alphanumeric characters."),
   ];
 };
 
